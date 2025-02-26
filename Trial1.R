@@ -69,7 +69,7 @@ data <- data %>%
   )
 
 ###Boxplot: Frond Length by Sample Site
-ggplot(data, aes(x = Sample_site, y = Frond_length..cm., fill = Sample_site)) +
+ggplot(data, aes(x = Sample_site, y = Frond_length..cm., fill = sample_site)) +
   geom_boxplot() +
   labs(title = "Frond Length Across Sample Sites",
        x = "Sample Site",
@@ -85,3 +85,4 @@ ggplot(data, aes(x = Harvested_non_harvested, y = frond_mass..g., fill = harvest
   theme_minimal()
 
 R.version.string
+
