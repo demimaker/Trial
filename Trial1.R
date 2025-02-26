@@ -1,6 +1,8 @@
+#loading packages
 install.packages("tidyverse")
 library("tidyverse")
 
+#loading data 
 data <- read.csv("Kelp_morphology_rawdata.csv")
 
 #clean up headings
@@ -23,6 +25,9 @@ clean_data <- clean_data %>%
     harvested_non_harvested = as.factor(harvested_non_harvested)
   )
   
+#check to see 
+summary(data)
+
 #save clean data as csv
 write.csv(clean_data, "tidydata.csv", row.names = FALSE)
 
