@@ -84,5 +84,5 @@ ggplot(data, aes(x = Harvested_non_harvested, y = frond_mass..g., fill = harvest
        y = "Frond Mass (g)") +
   theme_minimal()
 
-R.version.string
+
 
